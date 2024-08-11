@@ -28,8 +28,33 @@ let myObj = {name:"lokesh",age:"19"} //curly braces ke andar jo bhi hota hai usk
 const myFunction = function(){ 
     console.log("Hello World");    
 }
-console.log(typeof myObj);
+//console.log(typeof myObj);
 
 //Dynamically or Staticcally Typed
 //agarr variable assign karte hume batana pad rha hai ki value konse type ka hai toh use statically typed bolte hai eg : c++,java
 //dynamically typed : python,js
+
+
+//***************************Memory*****************************************
+
+//Stack (Primitive),Heap (Non-Primitive)
+//stored in stack (copy provided)
+let myYoutubeName = "LokeshJaiswar"
+let anotherName = myYoutubeName
+anotherName = "Jayesh"
+
+console.log(anotherName)
+
+//directly stored in heap (reference provided)
+let userOne = {
+    email : "user@gmail.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "lokeshjaiswar@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
