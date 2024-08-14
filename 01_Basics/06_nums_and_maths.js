@@ -15,7 +15,7 @@ const hundreds = 1000000
 //understand string and number methods
 
 // *****************Maths**************************
-// console.log(Math.abs(-4));
+// console.log(Math.abs(-4)); //remove - and give + no
 // console.log(Math.round(4.3));
 // console.log(Math.ceil(4.2));
 // console.log(Math.floor(4.2));
@@ -26,16 +26,8 @@ const hundreds = 1000000
 // console.log((Math.random()*10)+1); //(0.0)multiplying 10 to shift the vale to left side and adding one to get the minimum value 1
 // console.log(Math.round((Math.random()*10)+1)); 
 
-const max = 20;
-const min = 10;
+const max = 30;
+const min = 20;
 
 console.log(Math.round(Math.random()*(max-min+1)+min)) //sir's method 
 console.log(Math.round((Math.random()*10)+min))        // mine
-
-
-
-
-
-
-
-

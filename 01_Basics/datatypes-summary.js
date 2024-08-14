@@ -30,7 +30,7 @@ const myFunction = function(){
 }
 //console.log(typeof myObj);
 
-//Dynamically or Staticcally Typed
+//Dynamically or Statically Typed
 //agarr variable assign karte hume batana pad rha hai ki value konse type ka hai toh use statically typed bolte hai eg : c++,java
 //dynamically typed : python,js
 

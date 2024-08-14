@@ -1,5 +1,5 @@
 let myDate = new Date() //object
-console.log(myDate);
+// console.log(myDate);
 // console.log(myDate.toString());
 // console.log(myDate.toDateString());
 // console.log(myDate.toLocaleDateString());
@@ -13,25 +13,20 @@ let myCreatedDate = new Date("03-14-2005");//mm-dd-yy//string mai exact likhne k
 // console.log(myCreatedDate.toDateString());
 // console.log(myCreatedDate.toLocaleString());
 
-let myTimeStamp = Date.now()
+// let myTimeStamp = Date.now()
 // console.log(myTimeStamp); //value in millisecondds from 1-1-1970
-// console.log(myCreatedDate.getTime());//to get date in miliseconds
+// console.log(myCreatedDate.getTime());//to get any date in miliseconds
 
 // console.log(Date.now());//value is in milisecond
 // console.log(Math.round(Date.now()/1000))// to convert in seconds and math.round to avoid decimal values
 
 let newDate = new Date()
+//current day data is returned
 console.log(newDate.getMonth()+1);//because index is returned
 console.log(newDate.getDate());
 
-// string interpolation = `${}`
+// // string interpolation = `${}`
 
-newDate.toLocaleString("default",{
-    weekday:"long"
-})
-
-
-
-
-
-
+// newDate.toLocaleString("default",{
+//     weekday:"long"
+// })
