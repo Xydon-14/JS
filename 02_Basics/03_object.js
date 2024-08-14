@@ -1,12 +1,12 @@
 // singleton - when made using constructor
-// Object.create
+// Object.create 
 
 //object literals
 const mySym = Symbol("key1")
 const JsUser = {
-    name:"lokesh",//be default it will store "name"
+    name:"lokesh",//by default it will store "name"
     "full name":"lokesh jaiswar",// this value can not be accessed through dot
-    [mySym]: "mykey1",//to use symbol krrp the key in brackets
+    [mySym]: "mykey1",//to use symbol keep the key in brackets
     age : 19,
     location : "Mumbai",
     email: "lokesh@google.com",
@@ -22,7 +22,7 @@ const JsUser = {
 
 JsUser.email = "lokesh@chatgpt.com" //previous will be over rided
 // Object.freeze(JsUser);//now no changes can be done
-JsUser.email = "lokesh@microsoft.com" //previous will be over rided
+JsUser.email = "lokesh@microsoft.com" //since it has freeze nothing will happen
 // console.log(JsUser);
 
 JsUser.greeting = function(){
