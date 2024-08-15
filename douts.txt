@@ -1,2 +1,11 @@
 1) let and var
+    var is available throughout the code
+    it can be a problem
+var c = 100
+while(true){
+    var c = 10; 
+}
+console.log(c); now 10 will be printed 
+
+
 2) arrays can store different datatypes
