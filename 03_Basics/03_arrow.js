@@ -59,3 +59,5 @@ const addTwo = (num1, num2) => ({username: "hitesh"})
 // const myArray = [2, 5, 3, 7, 8]
 
 // myArray.forEach()
+
+//function bydefault undefined return karta hai
