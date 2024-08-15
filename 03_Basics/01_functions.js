@@ -45,7 +45,7 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, val2, ...num1){ //...num1=rest operator(to take many values and store in array)
     return num1
 }
 
@@ -57,10 +57,10 @@ const user = {
 }
 
 function handleObject(anyobject){
-    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    // console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
-// handleObject(user)
+// handleObject(user) //if there would be no attribute like username and price in the object then it will show undefined
 handleObject({
     username: "sam",
     price: 399
@@ -73,4 +73,4 @@ function returnSecondValue(getArray){
 }
 
 // console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+// console.log(returnSecondValue([200, 400, 500, 1000]));
