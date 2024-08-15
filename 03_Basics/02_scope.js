@@ -51,8 +51,7 @@ if (true) {
 // function addone(num){
 //     return num + 1
 // }
-    
-    
+      
 //we call this way expression also
 // const addTwo = function(num){
 //     return num + 2
