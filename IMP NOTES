@@ -2,3 +2,10 @@
 2) Only one else if can be executed i.e the first one
 
 Strict Equality (===) : checks the type and equality 2==="2" = false
+
+for of : array and map
+for in : array and object
+
+Maps are not iterable
+For each array ke sab element ko ek ek karke laata hai 
+Can we use implicit return in normal function

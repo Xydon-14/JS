@@ -14,7 +14,7 @@ for (const greet of greetings) {
     //console.log(`Each char is ${greet}`)
 }
 
-// Maps
+// Maps (EVERY KEY SHOULD BE UNIQUE)
 
 const map = new Map()
 map.set('IN', "India")
@@ -25,16 +25,17 @@ map.set('IN', "India")
 
 // console.log(map);
 
-for (const [key, value] of map) {
-    // console.log(key, ':-', value);
-}
+// for (const [key, value] of map) {
+//     console.log(key, ':-', value);
+// }
 
 const myObject = {
     game1: 'NFS',
     game2: 'Spiderman'
 }
+// console.log(myObject);
 
-// for (const [key, value] of myObject) {
-//     console.log(key, ':-', value);
-    
-// }
+
+for (const [key, value] of myObject) {
+    console.log(key, ':-', value);  
+}
