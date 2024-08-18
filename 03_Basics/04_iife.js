@@ -12,7 +12,14 @@
 
 ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`);
-} )('lokesh')
+} )("lokesh")
 
 //jo function immediately execute ho jaye
 //global scope ke pollution se problem hoti hai kahi baar toh us global scope ke variables ke pollution ko hatane ke liye  
+
+//practice code
+const printName = (name) => {
+    console.log(`Name is ${name}`);   
+}
+
+printName("lokesh");

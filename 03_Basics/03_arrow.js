@@ -5,8 +5,8 @@ const user = {
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);
         console.log(this);
+        // this refers to the current context
     }
-// this refers to the current context
 }
 
 // user.welcomeMessage()
@@ -19,8 +19,8 @@ const user = {
 
 // function chai(){
 //     let username = "hitesh"
-//     console.log(this.username);
-//     console.log(this); //this will return many values
+//     console.log(this.username); //functions ke andar context nhi
+//     // console.log(this); //this will return many values
 // }
 
 // chai() //function ke andar this use nhi kar sakte //undefined aayega

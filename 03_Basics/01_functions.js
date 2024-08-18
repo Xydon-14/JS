@@ -16,7 +16,7 @@ function sayMyName(){
 // }
 
 // const result1 = addTwoNumbers(3,4);
-// console.log(result1); //it will not reutrn anything because nothign is returned from the function
+// console.log(result1); //it will not reutrn anything because nothing is returned from the function
 
 function addTwoNumbers(number1, number2){ //parameters
 
