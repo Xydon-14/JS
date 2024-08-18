@@ -1,0 +1,4 @@
+1) Multiple if's can be executed if condition is true
+2) Only one else if can be executed i.e the first one
+
+Strict Equality (===) : checks the type and equality 2==="2" = false

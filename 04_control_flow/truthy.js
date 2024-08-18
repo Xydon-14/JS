@@ -25,11 +25,13 @@ if (Object.keys(emptyObj).length === 0) {
 
 // Nullish Coalescing Operator (??): null undefined
 
+// ?? = Security check ke liye agar null ya undefined aya database se toh problem ho sakta hai isliye sath mai dusra complex function lagate hai jo dusra value lega database se
+
 let val1;
 // val1 = 5 ?? 10
 // val1 = null ?? 10
 // val1 = undefined ?? 15
-val1 = null ?? 10 ?? 20
+val1 = null ?? 10 ?? 20 //first value ko lega
 
 
 

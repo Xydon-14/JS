@@ -8,6 +8,7 @@ const temperature = 41
 //     console.log("temperature is greater than 50");
 // }
 
+// === strict check (type bhi check karega datatype ka)
 // console.log("Execute");
 // <, >, <=, >=, ==, !=, ===, !==
 
@@ -17,6 +18,7 @@ const temperature = 41
 //     let power = "fly"
 //     console.log(`User power: ${power}`);
 // }
+// console.log(power);
 
 // console.log(`User power: ${power}`);
 
@@ -44,9 +46,16 @@ const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
 if (userLoggedIn && debitCard && 2==3) {
-    console.log("Allow to buy course");
+    // console.log("Allow to buy course");
 }
 
 if (loggedInFromGoogle || loggedInFromEmail) {
-    console.log("User logged in");
+    // console.log("User logged in");
 }
+
+let ans = 10;
+
+if(ans>11) console.log("I m in First If");
+// if(ans>8) console.log("I m in Second if");
+else if (ans>7) console.log("I m in First else if");
+else if(ans>5) console.log("I m in second Else if")

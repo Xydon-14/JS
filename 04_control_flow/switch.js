@@ -7,7 +7,7 @@
     //         break;
     // }
     
-    const month = "march"
+    const month = "jan"
     
     switch (month) {
         case "jan":
@@ -27,3 +27,5 @@
             console.log("default case match");
             break;
     }
+
+    // Agar break nhi likhenge toh niche ke condition ko check nhi karta aur sab run karta hai except default
