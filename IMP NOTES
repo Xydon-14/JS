@@ -3,9 +3,14 @@
 
 Strict Equality (===) : checks the type and equality 2==="2" = false
 
-for of : array and map
-for in : array and object
+for of : returns value (applicable for map)
+for in : returnd index
+forEach() : does not return anything
 
-Maps are not iterable
-For each array ke sab element ko ek ek karke laata hai 
+ways to define function
+1) function func_name (parameter){}
+2) cosnt func_name = (parameter)=>() for implicity return,()=>{} for explicit return
+
+map = stores the sequence of the elements and keys should be unique
+
 Can we use implicit return in normal function

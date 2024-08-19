@@ -1,8 +1,11 @@
+//forEach = har ek element ko lata hai 
+//call back function - jis function ka naam nhi hota
+
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (val){
-//     console.log(val);
-// } )
+coding.forEach( function (val){
+    console.log(val);
+} )
 
 // coding.forEach( (item) => {
 //     console.log(item);
@@ -12,7 +15,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 //     console.log(item);
 // }
 
-// coding.forEach(printMe)
+// coding.forEach(printMe) //we can pass a normal function but only reference
 
 // coding.forEach( (item, index, arr)=> {
 //     console.log(item, index, arr);

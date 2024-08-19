@@ -1,7 +1,7 @@
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 
 
-// const values = coding.forEach( (item) => {
+// const values = coding.forEach( (item) => { //it doesn't returns anything
 //     //console.log(item);
 //     return item
 // } )
@@ -10,7 +10,7 @@
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// const newNums = myNums.filter( (num) => {
+// const newNums = myNums.filter( (num) => { //filter returns
 //     return num > 4
 // } )
 

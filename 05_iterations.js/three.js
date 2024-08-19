@@ -25,17 +25,22 @@ map.set('IN', "India")
 
 // console.log(map);
 
+// for (const key of map) { //display whole map
+//     console.log(key);  
+// }
+
 // for (const [key, value] of map) {
 //     console.log(key, ':-', value);
 // }
+
 
 const myObject = {
     game1: 'NFS',
     game2: 'Spiderman'
 }
+
 // console.log(myObject);
 
-
-for (const [key, value] of myObject) {
-    console.log(key, ':-', value);  
-}
+// for (const [key, value] of myObject) { //[key,value] = destructuring of array
+//     // console.log(key, ':-', value);  
+// }
