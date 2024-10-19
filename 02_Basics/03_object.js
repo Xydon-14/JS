@@ -4,7 +4,7 @@
 //object literals
 const mySym = Symbol("key1")
 const JsUser = {
-    name:"lokesh",//by default it will store "name"
+    name:"Jyesh",//by default it will store "name"
     "full name":"lokesh jaiswar",// this value can not be accessed through dot
     [mySym]: "mykey1",//to use symbol keep the key in brackets
     age : 19,
@@ -15,6 +15,7 @@ const JsUser = {
 }
 
 // console.log(JsUser.email)
+// console.log(JsUser."full name") //unexpected input
 // console.log(JsUser["email"])
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])

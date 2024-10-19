@@ -22,7 +22,10 @@ const bigNumber = 235555555555555545674546n
 //Array,Objects,Functions
 
 const heroes = ["shaktiman","naagraj","doga"] //array
+// console.log(typeof heroes);
+
 let myObj = {name:"lokesh",age:"19"} //curly braces ke andar jo bhi hota hai usko object bolte hai
+// console.log(typeof myObj);
 
 //function returns function on typeof but has object funtion 
 const myFunction = function(){ 

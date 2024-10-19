@@ -22,12 +22,12 @@ let newArray = myArr2.join(); //converts array to string
 console.log(newArray)
 
 //slice,splice
-console.log("A ",myArr2);
+// console.log("A ",myArr2);
 const myn1 = myArr2.slice(1,3) //last index is not included
-console.log(myn1,"\n");
+// console.log(myn1,"\n");
 
-console.log("B ",myArr2);
+// console.log("B ",myArr2);
 const myn2 = myArr2.splice(1,3); // last index is included
-console.log(myn2,"\n");
+// console.log(myn2,"\n");
 
-console.log("C ",myArr2); // after splicing // og array is changed // spliced elements are removed from the array
+// console.log("C ",myArr2); // after splicing // og array is changed // spliced elements are removed from the array 

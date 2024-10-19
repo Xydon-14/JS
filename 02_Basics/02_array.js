@@ -3,7 +3,7 @@ const dc_heros = ["superman", "flash", "batman"]
 //marvel_heros.push(dc_heros) // it would be added as a single element
 // console.log(marvel_heros);
 // console.log(marvel_heros[3]);
-// console.log(marvel_heros[3][1]);//if you want to remove flash
+// console.log(marvel_heros[3][1]);//if you want to print flash
 
 // const allHeros = marvel_heros.concat(dc_heros) //adds as different element
 // console.log(allHeros);

@@ -6,6 +6,7 @@ let score = "hitesh"
 let valueInNumber = Number(score)
 //console.log(typeof valueInNumber);
 //console.log(valueInNumber); return NaN
+// console.log(typeof NaN) // number
 
 
 // "33" => 33
@@ -36,7 +37,7 @@ let negValue = -value
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
-// console.log(2**3);
+// console.log(2**3); 2 raise to 3
 // console.log(2/3);
 // console.log(2%3);
 
@@ -46,14 +47,14 @@ let str2 = " hitesh"
 let str3 = str1 + str2
 // console.log(str3);
 
-console.log("1" + 2);
-console.log(1 + "2");
-console.log("1" + 2 + 2);
-console.log(1 + 2 + "2");
+console.log("1" + 2); // will convert to string
+console.log(1 + "2"); //will convert to string
+console.log("1" + 2 + 2); //will convert to string
+console.log(1 + 2 + "2"); //will first calculate then string
 
 // console.log( (3 + 4) * 5 % 3);
 
-// console.log(+true);
+// console.log(+true); 
 // console.log(+"");
 
 // let num1, num2, num3

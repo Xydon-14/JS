@@ -10,6 +10,11 @@ let accountState;
 dont't use var because it has scope resolution problems
 */ 
 
-console.log(accountId);
-console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
+// console.log(accountId);
+// console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
 
+console.log(typeof jayesh)
+
+
+const sym2 = Symbol("foo");
+console.log(typeof sym2)
