@@ -15,9 +15,14 @@
     div.className = 'main';
     div.id = Math.round(Math.random()*10 + 1);
     div.setAttribute('title','generated title'); //more prefered bcoz it directly changes the values other property first take the values then changes it.
+    div.setAttribute('name','Lokesh');
     div.style.backgroundColor = 'green';
     div.style.padding = '12px';
-    div.innerText = 'Code With Lokesh'; 
+    // div.innerText = 'Code With Lokesh'; 
+    const addText = document.createTextNode('Code with Lokesh');
+    div.appendChild(addText);
+
+    document.body.appendChild(div);
     
 </script>
 </html>
