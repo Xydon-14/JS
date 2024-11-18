@@ -25,6 +25,6 @@ const string1 = "            lokesh      "
 console.log(string1.trim())
 
 const url = "https://lokesh.com/lokesh$20$jaiswar"
-console.log(url.replace("$20$","-"))
-console.log(url.includes("lokesh"));
-console.log(gameName.split("-")); // returns array
+// console.log(url.replace("$20$","-"))
+// console.log(url.includes("lokesh"));
+// console.log(gameName.split("-")); // returns array

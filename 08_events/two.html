@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Code with Lokesh</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const sayLokesh = function(){
+        console.log("Lokesh");       
+    }
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    // clearTimeout(changeMe) kya matlab timwout lagane ka jab he change he nhi karna tha isliye isko event pe likh rhe hai
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+
+    // handler,callback sab same he hai bina naam ka function
+</script>
+</html>
