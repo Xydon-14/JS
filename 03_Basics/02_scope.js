@@ -1,6 +1,6 @@
 //browser mai console mai run karte hai aur code environment mai node mai jo run karte hai dono ka global scope alag hai
 
-//browser ka global scope windows hota hai
+//browser ka global scope window hota hai
 
 // var c = 300
 // let a = 100
@@ -14,7 +14,7 @@
 // }
 
 // console.log(a);
-// // console.log(b);
+// // console.log(b);  //not defined
 // console.log(c);
 
 // function one(){
@@ -22,9 +22,9 @@
 
 //     function two(){
 //         const website = "youtube"
-//         console.log(username); //bache parents ka access kar sakte hai
+//         console.log(username); //bache parents ka variables access kar sakte hai
 //     }
-//     // console.log(website); // parents bache ka access nhi kar sakte
+//     // console.log(website); // parents bache ka variable access nhi kar sakte
 
 //      two()
 

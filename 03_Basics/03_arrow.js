@@ -1,7 +1,6 @@
 const user = {
     username: "hitesh",
     price: 999,
-
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);
         console.log(this);
@@ -9,13 +8,13 @@ const user = {
     }
 }
 
-// user.welcomeMessage()
+user.welcomeMessage()
 // user.username = "sam"
 // user.welcomeMessage()
 
 
 // console.log(this); this will return {} because it is written in node environment
-//In browser we will get windows
+//In browser we will get window
 
 // function chai(){
 //     let username = "hitesh"
@@ -50,7 +49,7 @@ const user = {
 //{} use hua toh return likhna padega
 //() use hua toh nhi likhna padega
 
-const addTwo = (num1, num2) => ({username: "hitesh"})
+// const addTwo = (num1, num2) => ({username: "hitesh"})
 
 
 // console.log(addTwo(3, 4))

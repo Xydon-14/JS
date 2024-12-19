@@ -8,7 +8,7 @@ const dc_heros = ["superman", "flash", "batman"]
 // const allHeros = marvel_heros.concat(dc_heros) //adds as different element
 // console.log(allHeros);
 
-// spread(...arr_name) = kach ka glass drop karne pe sb pieces spread ho jati hain
+// spread(...arr_name) = kach ka glass drop karne pe sb pieces spread ho jate hain
 const all_new_heroes = [...marvel_heros,...dc_heros]
 // console.log(all_new_heroes);
 
@@ -17,13 +17,13 @@ const all_new_heroes = [...marvel_heros,...dc_heros]
 // console.log(real_another_array); 
 // console.log(another_array); 
 
-console.log(Array.isArray("Lokesh"));// returns boolean 
+// console.log(Array.isArray("Lokesh"));// returns boolean 
 console.log(Array.from("Lokesh")); //converts into array
-console.log(Array.from({name:"Lokesh"})) //interesting //returns empty array // we should specify which array we want key or value
+// console.log(Array.from({name:"Lokesh"})) //interesting //returns empty array // we should specify which array we want key or value
 
 let names = {1:"Lokesh",2:"nandani",3:"jayesh",4:"pooja"}
 //console.log(names.values);
-console.log(Object.entries(names));
+// console.log(Object.entries(names));
 
 
 let score1 = 100
@@ -31,3 +31,4 @@ let score2 = 200
 let score3 = 300
 
 console.log(Array.of(score1, score2, score3));
+console.log(Array.of("lokesh"));

@@ -10,8 +10,8 @@ const otherNumber = 231.8966
 //kitne value ka precision chahiye
 
 const hundreds = 1000000
-// console.log(hundreds.toLocaleString());
-// console.log(hundreds.toLocaleString("en-IN"));
+console.log(hundreds.toLocaleString());
+console.log(hundreds.toLocaleString("en-IN"));
 //understand string and number methods
 
 // *****************Maths**************************
@@ -29,5 +29,6 @@ const hundreds = 1000000
 const max = 30;
 const min = 20;
 
-console.log(Math.round(Math.random()*(max-min+1)+min)) //sir's method 
-console.log(Math.round((Math.random()*10)+min))        // mine
+// console.log(Math.round(Math.random()*(max-min+1)+min)) //sir's method 
+// console.log(Math.round((Math.random()*10)+min))        // mine
+     

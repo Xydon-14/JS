@@ -1,11 +1,11 @@
-function sayMyName(){
-    console.log("H");
-    console.log("I");
-    console.log("T");
-    console.log("E");
-    console.log("S");
-    console.log("H");
-}
+// function sayMyName(){
+//     console.log("H");
+//     console.log("I");
+//     console.log("T");
+//     console.log("E");
+//     console.log("S");
+//     console.log("H");
+// }
 
 // console.log(sayMyName) //reference
 // sayMyName() //execution
@@ -15,7 +15,7 @@ function sayMyName(){
 //     console.log(number1 + number2);
 // }
 
-// const result1 = addTwoNumbers(3,4);
+const result1 = addTwoNumbers(3,4);
 // console.log(result1); //it will not reutrn anything because nothing is returned from the function
 
 function addTwoNumbers(number1, number2){ //parameters
@@ -42,8 +42,6 @@ function loginUserMessage(username = "sam"){
 
 // console.log(loginUserMessage()) if no value is passed inside the funtion undefined will come
 // console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
-
 
 function calculateCartPrice(val1, val2, ...num1){ //...num1=rest operator(to take many values and store in array)
     return num1

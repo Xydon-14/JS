@@ -17,4 +17,6 @@ console.log(typeof jayesh)
 
 
 const sym2 = Symbol("foo");
+console.log(sym2);
+
 console.log(typeof sym2)

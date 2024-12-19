@@ -2,7 +2,7 @@
 // let repoCount = 50
 // //console.log(name + repoCount + " value"); old way
 
-// //modern way
+// //modern way (String Interpolation)
 // console.log(`My name is ${name} and My repository count is ${repoCount}.`)
 
 // //second way to declare a string 
@@ -18,7 +18,7 @@ const gameName = new String("LokeshJ-hs-com")
 const newString = gameName.substring(0,6)
 console.log(newString);
 
-const anotherString = gameName.slice(-9,9)
+const anotherString = gameName.slice(-9,9)//can pass negative value
 console.log(anotherString);
 
 const string1 = "            lokesh      "

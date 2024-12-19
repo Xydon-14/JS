@@ -3,7 +3,7 @@ const tinderUser = {} //non singleton
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
-console.log(tinderUser);
+// console.log(tinderUser);
 
 const regularUser = {
     email: "some@gmail.com",
@@ -15,7 +15,7 @@ const regularUser = {
     }
 }
 
-// console.log(regularUser.fullname?.userfullname.firstname);// ? is protection
+console.log(regularUser.fullname?.userfullname.firstname);// ? is protection (if fullname doesn't exist)
 
 //for adding objects together
 const obj1 = {1: "a", 2: "b"}

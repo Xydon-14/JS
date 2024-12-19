@@ -4,7 +4,7 @@
 //object literals
 const mySym = Symbol("key1")
 const JsUser = {
-    name:"Jyesh",//by default it will store "name"
+    name:"Jayesh",//by default it will store "name"
     "full name":"lokesh jaiswar",// this value can not be accessed through dot
     [mySym]: "mykey1",//to use symbol keep the key in brackets
     age : 19,
@@ -30,7 +30,7 @@ JsUser.greeting = function(){
     console.log("Hello JS user");
 }
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+    console.log(`Hello JS user, ${this.name}`); //this is pointing towards object name
 } 
 
 console.log(JsUser.greeting);
