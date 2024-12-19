@@ -20,32 +20,36 @@
 </body>
 
 <script>
+    // First Approach
+    //Adding onclick inside a element is not a feasible approach bcoz it will create problem when the program will scale
+    //<li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" onclick="alert('owl')"></li>
+
+    //Second Approach
     // document.getElementById('owl').onclick = function(){
     //     alert('owl clicked');
-    // };onclick event kam features deta hai no propogation feature
+    // };onclick event kam features deta hai aur no propogation feature
 
+    //Third Approach (Best Approach)
     // document.getElementById('owl').addEventListener('click',function(){
     //     alert('owl clicked again');
     // },false);
 
     //attachEvent() ye pehle use hota tha jab internet explorer pe use karte hai
-
     //jQuery - on 
 
     // document.getElementById('owl').addEventListener('click',function(e){
-    //     console.log(e);
-        
+    //     console.log(e);       
     // },false);
 
     //to study
-    //type,timestamp,defaultPrevented(default behaviour rokne ke liye)
-    //target,toElement,sourceElement,currentTarget,=
+    //type(keyboard,mouse events),timestamp,defaultPrevented(default behaviour rokne ke liye)
+    //target,toElement,srcElement,currentTarget,
     //clientX,clientY,screenX,screenY,tiltX,tiltY
     //altKey,ctrlKey,shiftKey,keyCode
 
     // Event Propogation default false
-    // event bubbling - false pehle khud phir main
-    // event capturing - true pehle main phir khud
+    // event bubbling - false pehle child phir parent
+    // event capturing - true pehle parent phir child
 
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
@@ -53,27 +57,39 @@
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
-    //     e.stopPropagation();
+    //     e.stopPropagation(); //bubbling nhi hoga(parent ke pass nhi jayega)
     // }, false)
 
+    // anker tag ka page naviagation rokne ke liye
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
     //     e.stopPropagation();
     //     console.log('google clicked');   
     // },false)
 
+    //Deleting a image after clicking it
+    //First Approach 
+    //This approach is good but while clicking google whole ul is selected therefore everything is deleted.Same while clicking li.
     document.querySelector('#images').addEventListener('click',function(e){
-        console.log(e);
-        // console.log(e.target.parentNode);
-        console.log(e.target.tagName);
-
-        if(e.target.tagName === 'IMG'){
-            console.log(e.target.id);          
-            let removeIt = e.target.parentNode;
-            removeIt.remove();
-            // removeIt.parentNode.removeChild(removeIt); you can use this too
-        }
+        console.log(e.target.parentNode); //pura li remove karna hai na ki bas img isliye parentNode
+        // console.log(e.target.parentElement); //parentNode aur parentElement dono same hai
+        let removeIt = e.target.parentNode; //li
+        removeIt.remove();
+        // removeIt.parentNode // will give ul
+        // removeIt.parentNode.removeChild(removeIt); you can use this too       
     },false)
+
+    //Second Approach
+    // document.querySelector('#images').addEventListener('click',function(e){
+
+    //     console.log(e.target.tagName);
+
+    //     if(e.target.tagName === 'IMG'){
+    //         console.log(e.target.id);          
+    //         let removeIt = e.target.parentNode;
+    //         removeIt.remove();
+    //     }
+    // },false)
 </script>
 </html>
 
