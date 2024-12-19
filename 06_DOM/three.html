@@ -12,16 +12,20 @@
 <script>
     const div = document.createElement('div');
     console.log(div);
+    
+    div.setAttribute('title','generated title'); //more prefered bcoz it directly changes the values other property first take the values then changes it. //ye sida changes karega
+    //not optimized ways bcoz value ko layega phir changes karega 
     div.className = 'main';
     div.id = Math.round(Math.random()*10 + 1);
-    div.setAttribute('title','generated title'); //more prefered bcoz it directly changes the values other property first take the values then changes it.
     div.setAttribute('name','Lokesh');
     div.style.backgroundColor = 'green';
     div.style.padding = '12px';
-    // div.innerText = 'Code With Lokesh'; 
-    const addText = document.createTextNode('Code with Lokesh');
+
+    // div.innerText = 'Code With Lokesh'; //pehle value ko layega phir changes karega
+    const addText = document.createTextNode('Code with Lokesh'); //optimized way
     div.appendChild(addText);
 
+    //sab kuch abhi memory mai hai usko attach karne ke liye
     document.body.appendChild(div);
     
 </script>
