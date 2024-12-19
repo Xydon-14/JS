@@ -11,18 +11,23 @@
 </body>
 
 <script>
+
+    // setInterval() => ek kaam ko baar baar karega diye hue time ke baad
+    // setTimeout() => ek kaam ko ek he baar karega diye huye time ke baad
+
     const sayLokesh = function(){
         console.log("Lokesh");       
     }
 
+    //Changing the text after two seconds
     const changeText = function(){
         document.querySelector('h1').innerHTML = "best JS series"
     }
-
     const changeMe = setTimeout(changeText, 2000)
 
-    // clearTimeout(changeMe) kya matlab timwout lagane ka jab he change he nhi karna tha isliye isko event pe likh rhe hai
+    // clearTimeout(changeMe) //ye line execute hote he call back queue se call back function jo register hua hai wo nikal jayega
 
+    //jaise he button pe click hoga setTimeout stop ho jana chahiye
     document.querySelector('#stop').addEventListener('click', function(){
         clearTimeout(changeMe)
         console.log("STOPPED")
